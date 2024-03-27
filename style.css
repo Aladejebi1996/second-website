@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-image: url("image.logo.png.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.logo{
+    color: blue;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container{
+    width: 98%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 30px;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    margin-left: 25px;
+    color: blue;
+    font-weight: 600;
+}
+
+.nav ul li:hover{
+    color: red;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+}
+
+.content .right img{
+    transform: rotate(-15deg);
+    max-width: 400px;
+    height: 500px;
+    position: relative;
+}
+
+.right{
+    position: relative;
+}
+
+.content .right::after{
+    position: absolute;
+    content: "";
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    left: 20%;
+    top: 20%;
+    background-color: white;
+    z-index: -1;
+}
